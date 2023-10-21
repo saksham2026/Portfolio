@@ -1,0 +1,284 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&family=Poppins:wght@100;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&family=Sometype+Mono:wght@500&family=Ubuntu&display=swap');
+
+
+/* CSS for Navbar starts here. */
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+body{
+  background-color: #EFE5FD;
+}
+#name{
+  font-family: 'Playpen Sans', cursive;
+  font-size: x-large;
+}
+
+nav{
+  padding: 0 30px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  height: 6vw;
+  background-color: #9965F4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* CSS for Navbar ends here. */
+
+/* CSS for Main Section starts here. */
+.main{
+  margin-top: 30px  ;
+  display : flex;
+  width: 100vw;
+}
+.main-left{
+  display: flex;
+  flex-direction: column;
+  gap:100px;
+  width: 50%;
+  height: 500px;
+  padding : 20px ;
+}
+.main-right{
+  padding-top: 20px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 50%;
+  height: 500px;
+  overflow-y: hidden;
+}
+ .image {
+  overflow: hidden;
+  height : 400px ;
+  width: 400px;
+  border-radius: 50%;
+  background: url('./myProfile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .main-left h1{
+  color: #311B92;
+  text-align: center;
+  font-family: 'ubuntu';
+  font-size: 4rem;
+}
+#blink{
+  animation: blink 0.22s  infinite alternate ;
+}
+
+@keyframes blink {
+  to{
+    opacity: 0;
+  }
+}
+
+/* CSS for Main Section ends here. */
+
+/* CSS for About section  starts here. */
+
+.details{
+  padding-top: 40px ;
+}
+.details-heading{
+  color : #311B92;
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 3rem;
+}
+#typewriter2{
+  color : #311B92;
+}
+.aboutme{
+  font-family: 'Playpen Sans';
+  font-size: 2rem;
+  text-align: center;
+  color : rgb(44, 0, 46);
+}
+.skills{
+  margin-top: 50px ;
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 3rem;
+}
+#skills{
+  margin-top: 40px;
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 3rem ;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  gap : 50px ;
+  margin-bottom: 50px;
+}
+.project{
+  height : 300px ;
+  width : 100vw ;
+  display: flex;
+  border : 1px soild white ;
+}
+.project-left{
+  width : 50%;
+  height : 100%;
+  border-right: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.project-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding: 0 100px;
+  
+}
+.project-right > p{
+  font-family: 'Sometype Mono';
+  font-size: 1.3rem;
+}
+.project-left .project-name{
+  font-size: 2rem;
+  font-family: 'Ubuntu';
+}
+.git{
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-family: 'poppins';
+}
+/* CSS for About section  ends here. */
+
+
+/* CSS for Footer Starts here. */
+
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin: 0 10px;
+
+}
+.social-links i{
+  font-size: 1.3rem;
+}
+.social-links a :hover{
+filter: brightness(1.5);
+}
+
+
+
+/* CSS for Footer ends here. */
+
+/* Code for making the page responsive. */
+
+@media screen and (max-width:1322px) {
+  .project-right p{
+    font-size: 1.2rem;
+  }
+  .project-right{
+    
+    padding: 0 90px;
+    
+  }
+}
+@media screen and (max-width:1117px) {
+  .project-right p{
+    font-size: 1.1rem;
+  }
+  .project-right{
+    
+    padding: 0 85px;
+    
+  }
+}
+@media screen and (max-width:973px) {
+  .project-right p{
+    font-size: 1rem;
+  }
+  .project-right{
+    
+    padding: 0 50px;
+    
+  }
+  .image {
+    overflow: hidden;
+    height : 300px ;
+    width: 300px;
+  }
+  .main .main-left h1{
+    font-size: 2.5rem;
+  }
+  .details-heading{
+    font-size: 2rem;
+  }
+  .skills{
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  #skills{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width:775px){
+  .project-right p{
+    font-size: 14px;
+  }
+  .aboutme{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width:624px){
+  .project-right p{
+    font-size: 12px;
+  }
+  .main .main-left h1{
+    font-size: 1.3rem;
+  }
+  #name{
+    font-family: 'Playpen Sans', cursive;
+    font-size: large;
+  }
+  .image {
+    overflow: hidden;
+    height : 200px ;
+    width: 200px;
+  }
+  .aboutme{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width:597px) {
+  .project-right{
+    padding: 0 10px;
+    
+  }
+  .aboutme{
+    font-size: 1rem;
+  }
+}
